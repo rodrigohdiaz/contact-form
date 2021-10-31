@@ -3,6 +3,23 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    /* font-size: 3em; */
+}
+
+.fieldName {
+    width: 100%;
+    position: relative;
+    margin-top: 25px;
+}
+
+.colourOptions{
+    width: 100%;
+    position: relative;
+    margin-left: 50%;
+}
+
+.text{
+    font-size: 2em;
 }
 
 .submitButton {
@@ -12,3 +29,4 @@
     display:flex;
     justify-content:center;
 }
+

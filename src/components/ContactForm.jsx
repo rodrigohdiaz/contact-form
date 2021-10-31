@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/form.css'
+import ColourSelector from './ColorSelection'
   
 class FormComponent extends React.Component {
     constructor() {
@@ -37,6 +38,7 @@ class FormComponent extends React.Component {
     }
   }
   
+  // validation for email to meet criteria
   validate(){
       let input = this.state.input;
       let errors = {};
@@ -55,7 +57,8 @@ class FormComponent extends React.Component {
           errors["email"] = "Please enter valid email address.";
         }
       }
-  
+
+  // validation for password to meet criteria
       if (!input["password"]) {
         isValid = false;
         errors["password"] = "Please enter your password.";
@@ -82,6 +85,8 @@ class FormComponent extends React.Component {
         <h1 id="title">Contact Form</h1>
         <form onSubmit={this.handleSubmit}>
   
+        {/* email field */}
+
           <div className="form-group fieldName">
             <label htmlFor="email">Email Address:</label>
             <input 
@@ -96,6 +101,9 @@ class FormComponent extends React.Component {
               <div className="text-danger">{this.state.errors.email}</div>
           </div>
   
+        {/* password field */}
+        
+
           <div className="form-group fieldName">
             <label htmlFor="password">Password:</label>
             <input 
@@ -109,7 +117,13 @@ class FormComponent extends React.Component {
   
               <div className="text-danger">{this.state.errors.password}</div>
           </div>
+
+        {/* colour selection  */}
+            <ColourSelector />
              
+
+         {/* button to check validations */}
+
           <input type="submit" value="Submit" className="btn btn-success submitButton" />
         </form>
       </div>
