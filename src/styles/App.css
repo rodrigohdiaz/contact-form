@@ -2,4 +2,11 @@
 
 html, body {
     font-family: 'lato', sans-serif;
+    width: 100%;
+}
+
+.App {
+    width: 50%;
+    position: relative;
+    margin: 5% auto;
 }

@@ -1,0 +1,14 @@
+#title{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.submitButton {
+    width: 40%;
+    position: relative;
+    margin: 25px auto;
+    display:flex;
+    justify-content:center;
+}

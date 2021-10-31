@@ -1,12 +1,12 @@
 import React from 'react';
-import '../styles/global.css'
+import '../styles/form.css'
   
 class FormComponent extends React.Component {
     constructor() {
     super();
     this.state = {
       input: {},
-      errors: {}
+      errors: {} 
     };
      
     this.handleChange = this.handleChange.bind(this);
@@ -110,7 +110,7 @@ class FormComponent extends React.Component {
               <div className="text-danger">{this.state.errors.password}</div>
           </div>
              
-          <input type="submit" value="Submit" className="btn btn-success" />
+          <input type="submit" value="Submit" className="btn btn-success submitButton" />
         </form>
       </div>
     );
